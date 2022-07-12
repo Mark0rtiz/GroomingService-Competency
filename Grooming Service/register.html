@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <title>Mark's Grooming Service Register</title>
+</head>
+<body>
+    <header>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Contact</a>
+            </li>
+    </header>
+      <h1>Registration</h1>
+        <main class= "container">
+
+        <div class="title">
+            <h2>Register your pet!</h2>
+
+            <p id="number-pets">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, eligendi fugit! Voluptatem error est amet aperiam inventore! Aperiam repellendus delectus odit, autem vel, iste cum iusto est maiores ipsa veniam?</p>
+
+        </div>
+        <div>
+            <input type="text" class= "form-control" placeholder="Enter pet name" id="txtPetName">
+            <input type="number" class= "form-control" placeholder="Enter pet age" id="numPetAge">
+            <input type="text" class= "form-control" placeholder="Enter pet gender (M or F)" id="txtPetGender">
+            <input type="text" class= "form-control" placeholder="Enter breed" id="txtPetBreed">
+            <select class="form-select" id="selService">
+                <option value="Haircut">Haircut (From $40) </option>
+                <option value="Haircut">Deluxe Haircut (From $80)</option>
+                <option value="Nail Trim">Nail Trim ($20)</option>
+                <option value="Claws">Soft Claws ($20)</option>
+                <option value="Bath">Bath ($25-$70)</option>
+                <option value="Undercoat Bath">Undercoat removal Bath(From $40)</option>
+                <option value="Full Service">Full Spa Service(From $50)</option>
+            <input type="text" class= "form-control" placeholder="Enter your name" id="txtOwnerName">
+            <input type="text" class= "form-control" placeholder="Enter your phone number" id="txtPhone">
+            
+            <div class="btn-container">
+            <button class="btn btn-primary" id="btnSave" onclick="register();">Register</button>
+            </div>
+        </div>
+
+        <div id="pet-cards" class="pets">
+
+        </div>
+        <div class="d-flex" role="search">
+          <input class="form-control me-2" id="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-primary" onclick="search();">Search</button>
+        </div>
+      </ul>
+
+        <table class="table table-striped">
+          <thead>
+
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Breed</th>
+              <th>Service</th>
+              <th>Owner</th>
+              <th>Phone</th>
+            </tr>
+          </thead>
+          <tbody id="pet-table">
+          </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>We accept all major credit cards!</p>
+        <p>Copyright Mark Ortiz, 2022</p>
+        <p id="groomingInfo"></p>
+        <div class="social-links">
+          <ul>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+      </div>
+    </footer>
+
+    <script src= "scripts/register.js"></script>
+    <script src="scripts/display.js"></script>
+</body>
+</html>
